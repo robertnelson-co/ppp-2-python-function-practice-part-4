@@ -26,5 +26,14 @@ rev_string("hello")
 #Accepts number, begining of range, and end of range(inclusive) as arguments
 #Examples: num_within(3,2,4) returns true;  num_within(10,2,5) returns false
 
+def num_within(number_to_test, start_range, end_range):
+    if start_range <= number_to_test <= end_range:
+        print("True")
+    else:
+        print("False")
+
+num_within(29, 1, 30)
+num_within(3, 3.1415926535897932384626433, 3.1416)
+
 #function called pascal() that prints out the first n rows of Pascal's triangle
 #Accepts number n, the number of rows to print
